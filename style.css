@@ -8,80 +8,54 @@
 }
 body{
     font-family: 'Poppins', 'sans-serif';
+    width:100%;
+    background-color:#ffbf80;
 }
-
-/*Desktop Nav*/
-nav, 
-.nav-links{
-    display:flex;
+.desktopnav{
+    max-width:600px;
+    margin:auto;
 }
-nav{
-    justify-content: space-around;
-    align-items: center;
-    height:15vh;
+.desktopnav div{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.desktopnav{
+    overflow-y: auto;
+}
+img{
+    width:600px;
+    height:400px;
+}
+section ul{
+    margin-left:30px;
+    list-style: none;
     margin-bottom:10px;
 }
-.nav-links li, a{
-    list-style-type: none;
+section{
+    padding-left:10px;
+}
+section p{
+    display: flex;
+    text-align: center;
+    background-color: white;
+    width:100%; 
+    margin-bottom:10px;
+}
+footer{
+    padding-left:10px;
+}
+footer p{
+    background-color: white;
+    width:100%; 
+}
+footer ul{
+    margin-left:30px;
+    list-style: none;
+}
+section a{
     text-decoration: none;
-    color:rgb(0, 225, 255)
-}
-.nav-links{
-    gap: 5rem;
-    font-size: 1.5rem;
-    margin-right: 10px;
-}
-.logo{
-    font-size:2rem;
-    cursor:default;
-    margin-left:10px;
-}
-a:hover{
     color:black;
 }
-.my-section{
-    display:flex;
-    justify-content: space-around;
-}
-.my-section-left, img{
-    width: 400px;
-    height:400px;
-    margin-left:10px;
-}
-.myself{
-    margin-top:40px;
-    margin-left:20px;
-}
-@media (max-width:1000px){
-    nav{
-        display:flex;
-        flex-direction: column;
-        align-content: space-between;
-    }
-    .nav-links{
-        justify-content: center;
-        font-size: 0.9rem;
-    }
-    .my-section{
-        display: flex;
-        flex-direction: column;
-    }
-    .my-section-left{
-        margin-left: 200px;
-    }
-}
-@media(max-width:500px){
-    .my-section{
-        display:flex;
-        flex-direction: column;
-    }
-    .my-section-left{
-        margin-left:10px;
-    }
-
-}
-@media(max-width:700px){
-    .my-section-left{
-        margin-left:20px;
-    }
+section a:hover{
+    background-color: greenyellow;
 }
